@@ -16,7 +16,7 @@ const Header = () => {
       </div>
      </Link> 
 
-      <form className='search-bar w-[50%] h-10 rounded-lg flex items-center  border'>
+      <form  className='search-bar w-[50%] h-10 rounded-lg flex items-center  border'>
         <input
           type="text"
           placeholder='Search for restaurant and food'
