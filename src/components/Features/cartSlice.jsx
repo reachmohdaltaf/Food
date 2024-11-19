@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { createSlice } from '@reduxjs/toolkit';
+import toast from 'react-hot-toast';
 
 // Redux slice for cart management
 const cartSlice = createSlice({
@@ -12,9 +13,11 @@ const cartSlice = createSlice({
       const existingItem = state.items.find((item) => item.id === action.payload.id);
       if (existingItem) {
         existingItem.quantity += 1;
+        toast.success('+1');
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
       }
+      
     },
     removeItem: (state, action) => {
       const existingItem = state.items.find((item) => item.id === action.payload.id);
