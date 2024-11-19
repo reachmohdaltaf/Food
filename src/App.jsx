@@ -5,6 +5,7 @@ import Cart from "./components/Cart/Cart";
 import Recipes from "./components/Recipes/Recipes";
 import Home from "./components/Home/Home";
 import toast, { Toaster } from "react-hot-toast";
+import Offer from    './components/Offers/Offer'
 
 const App = () => {
 
@@ -70,6 +71,10 @@ const App = () => {
     {
       path: "/Recipes",
       element: <Recipes addToCart={addToCart} sampleData={allData} />,
+    },
+    {
+      path: "/Offer",
+      element: <Offer/>,
     },
   ]);
   

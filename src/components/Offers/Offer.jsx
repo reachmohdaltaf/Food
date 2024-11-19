@@ -1,7 +1,10 @@
+import Header from "../Navbar/Header"
 
 const Offer = () => {
   return (
-    <div>Offer</div>
+    <div>
+      <Header/>
+    </div>
   )
 }
 
