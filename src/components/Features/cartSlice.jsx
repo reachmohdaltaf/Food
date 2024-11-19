@@ -16,7 +16,10 @@ const cartSlice = createSlice({
         toast.success('+1');
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
+        toast.success(`Added ${action.payload.name} to cart!`);
+
       }
+
       
     },
     removeItem: (state, action) => {

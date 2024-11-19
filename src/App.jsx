@@ -40,7 +40,6 @@ const App = () => {
   //addtocart wala function ye hai 
   const addToCart = (recipe) => {
     dispatch(addItem(recipe));
-    toast.success(`Successfully added ${recipe.name} to Cart`);
   };
 
 //ye page link krdiye 
