@@ -43,7 +43,7 @@ const Header = () => {
             <img src={user} alt="User" className='h-full' />Sign in
           </li></Link>
           <Link to="/Cart"><li className='flex gap-1 h-5 items-center'>
-            <img src={cart} alt="Cart" className='h-full' />Cart{cart2.length} {console.log(cart2)}
+            <img src={cart} alt="Cart" className='h-full' />Cart {cart2.length} {console.log(cart2)}
           </li></Link>
         </ul>
       </div>
