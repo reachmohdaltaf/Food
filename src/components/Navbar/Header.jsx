@@ -5,9 +5,14 @@ import user from '../../assets/user.png';
 import cart from '../../assets/cart.png';
 import searchicon from '../../assets/searchicon.png';
 import { Link } from 'react-router-dom';
+import {useSelector} from 'react-redux'
 
 
 const Header = () => {
+
+  //subscribing to the store
+
+  const cart2 = useSelector((store)=>store.cart.items)
   return (
     <div className='p-4 h-16 sticky top-0 z-10 bg-white border shadow-sm flex items-center justify-between'>
      <Link to='/'>
@@ -34,11 +39,11 @@ const Header = () => {
           <Link to="/Offer"> <li className='flex gap-1 h-5 items-center'>
             <img src={offers} alt="Offers" className='h-full' />Offers
           </li></Link>
-          <li className='flex gap-1 h-5 items-center'>
+          <Link to="/SignIn"> <li className='flex gap-1 h-5 items-center'>
             <img src={user} alt="User" className='h-full' />Sign in
-          </li>
+          </li></Link>
           <Link to="/Cart"><li className='flex gap-1 h-5 items-center'>
-            <img src={cart} alt="Cart" className='h-full' />Cart
+            <img src={cart} alt="Cart" className='h-full' />Cart{cart2.length} {console.log(cart2)}
           </li></Link>
         </ul>
       </div>
