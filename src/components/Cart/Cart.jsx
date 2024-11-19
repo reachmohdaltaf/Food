@@ -11,6 +11,7 @@ const Cart = () => {
     dispatch(addItem(item));
     toast.success(`Added +1 to ${item.name}`);
   };
+  
 
   const handleRemove = (item) => {
     dispatch(removeItem(item));
@@ -18,12 +19,12 @@ const Cart = () => {
   };
 
   const totalSum = cartItems.reduce((total, item) => total + item.reviewCount * item.quantity, 0);
-
+ 
   return (
     <div>
       <Header />
       <div className="cart h-full flex justify-center flex-col items-center p-5 sm:p-10">
-        <h3 className="text-3xl font-bold mb-5">My Cart</h3>
+        <h3 className="text-3xl font-bold mb-5">{cartItems.length===0? "Your Cart is Empty" : "Your Orders"}</h3>
 
         <div className="bg-zinc-100 w-full sm:w-[90%] p-5 flex flex-wrap gap-10 justify-center">
           {cartItems.map((item) => (
