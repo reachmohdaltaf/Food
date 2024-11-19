@@ -15,7 +15,7 @@ const Cart = () => {
 
   const handleRemove = (item) => {
     dispatch(removeItem(item));
-    toast.success(`Removed -1 from ${item.name}`);
+    toast.success(`-1 Removed`);
   };
 
   const totalSum = cartItems.reduce((total, item) => total + item.reviewCount * item.quantity, 0);
