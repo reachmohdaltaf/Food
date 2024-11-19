@@ -32,7 +32,7 @@ const App = () => {
   if (allData.length === 0) {
     return (
       <div className="flex items-center justify-center h-screen">
-        <img className="h-10 animate-spin" src={logo} alt="Loading..." />  
+        <img className="h-10 animate-pulse" src={logo} alt="Loading..." />  
       </div>
     );
   }
