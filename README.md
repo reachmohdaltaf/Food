@@ -24,7 +24,7 @@ Installation & Setup
 Clone the repository:
 bash
 Copy code
-git clone https://github.com/yourusername/food-cart-project.git
+git clone https://github.com/reachmohdaltaf/food.git
 Navigate to the project folder:
 bash
 Copy code
@@ -52,4 +52,4 @@ License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Contact
-For any questions, feel free to reach out via email at your.email@example.com.
+For any questions, feel free to reach out via email at reachmohdaltaf@gmail.com
